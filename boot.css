@@ -1,0 +1,130 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background-color: rgb(141, 89, 141);
+    color: white;
+    padding: 20px 50px;
+}
+
+.navtop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search{
+    display: flex;
+    align-items: center;
+    background-color: grey;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.searchinput{
+    border: none;
+    background-color: transparent;
+}
+.searchinput::placeholder{
+    color: lightgray;
+}
+.limitedoffer{
+    font-size: 20px;
+    border-bottom: 2px solid rgb(58, 2, 58);
+    cursor: pointer;
+}
+.navbottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuitem{
+    margin-right: 50px;
+    font-weight: 400;
+    cursor: pointer;
+    color: lightgray;
+}
+
+.slider{
+   background: url(https://www.pixelstalk.net/wp-content/uploads/2016/10/Black-Glitter-HD-Backgrounds.jpg);
+  clip-path: polygon(0% 0%, 100% 0, 100% 99%, 49% 100%, 0 99%);
+overflow: hidden;
+}
+.sliderwrapper{
+         display: flex;
+         width: 500vw; 
+         transition: all 1.5s ease-in-out ;
+}
+.slideritem{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.slidertitle{
+    position: absolute;
+    color: white;
+    top: 10%;
+    right: 10%;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    z-index: 1;
+  }
+.slidbg{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: yellow;
+}
+.sliderimg{
+    z-index: 1;
+}
+.sliderprice{
+    position: absolute;
+    color: white;
+    top: 10%;
+    left: 10%;
+    font-size: 30px;
+    background-color: pink;
+    text-align: center;
+    font-weight: 500;
+    border: 1px solid green;
+    z-index: 1;
+}
+.buybutton{
+    position: absolute;
+    color: white;
+    top: 50%;
+    right: 20%;
+    font-size: 30px;
+    font-weight: 900;
+    border: 2px solid green;
+    background-color:pink;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.buybutton:hover{
+    background-color: white;
+    color: pink;
+}
+
+.slideritem:nth-child(1) .slidbg{
+    background-color:pink;
+}
+.slideritem:nth-child(2) .slidbg{
+    background-color:rgb(248, 248, 129);
+}
+.slideritem:nth-child(3) .slidbg{
+    background-color: rgb(255, 118, 255);
+}
+.slideritem:nth-child(4) .slidbg{
+    background-color:rgb(98, 98, 240);
+}
+.slideritem:nth-child(5) .slidbg{
+    background-color:greenyellow;
+}
+
