@@ -4,7 +4,7 @@ body{
     margin: 0;
 }
 nav{
-    background-color: rgb(141, 89, 141);
+    background-image: radial-gradient( circle ,rgb(68, 61, 61),white,rgb(68, 61, 61));
     color: black;
     padding: 20px 50px;
 }
@@ -40,7 +40,7 @@ nav{
 }
 .menuitem{
     margin-right: 50px;
-    font-weight: 400;
+    font-weight: 900;
     cursor: pointer;
     color: black;
 }
