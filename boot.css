@@ -5,7 +5,7 @@ body{
 }
 nav{
     background-color: rgb(141, 89, 141);
-    color: white;
+    color: black;
     padding: 20px 50px;
 }
 
@@ -42,11 +42,11 @@ nav{
     margin-right: 50px;
     font-weight: 400;
     cursor: pointer;
-    color: lightgray;
+    color: black;
 }
 
 .slider{
-   background: url(https://www.pixelstalk.net/wp-content/uploads/2016/10/Black-Glitter-HD-Backgrounds.jpg);
+   background: url(https://thumbs.dreamstime.com/b/seamless-ceramic-tiles-white-wall-background-texture-seamless-ceramic-tiles-white-wall-background-160826280.jpg);
   clip-path: polygon(0% 0%, 100% 0, 100% 99%, 49% 100%, 0 99%);
 overflow: hidden;
 }
@@ -64,7 +64,7 @@ overflow: hidden;
 }
 .slidertitle{
     position: absolute;
-    color: white;
+    color: black;
     top: 10%;
     right: 10%;
     font-size: 30px;
@@ -84,7 +84,7 @@ overflow: hidden;
 }
 .sliderprice{
     position: absolute;
-    color: white;
+    color:black;
     top: 10%;
     left: 10%;
     font-size: 30px;
@@ -96,7 +96,7 @@ overflow: hidden;
 }
 .buybutton{
     position: absolute;
-    color: white;
+    color: black;
     top: 50%;
     right: 20%;
     font-size: 30px;
