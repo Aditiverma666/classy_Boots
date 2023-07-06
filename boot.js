@@ -8,11 +8,11 @@ const products = [
     price: 4999,
     colors:[{
         code:"brown",
-        img:"/boots/brown.png",
+        img:"./boots/brown.png",
     },
     {
         code: "black",
-        img: "/boots/blacknee.png",
+        img: "./boots/blacknee.png",
     },
 ],
 },
@@ -22,11 +22,11 @@ const products = [
     price: 4999,
     colors:[{
         code:"red",
-        img:"/boots/brown.png",
+        img:"./boots/brown.png",
     },
     {
         code: "black",
-        img: "/boots/blacknee.png",
+        img: "./boots/blacknee.png",
     },
 ],
 },
@@ -36,11 +36,11 @@ const products = [
     price: 4999,
     colors:[{
         code:"green",
-        img:"/boots/greenvelvet",
+        img:"./boots/greenvelvet",
     },
     {
         code: "maroon",
-        img: "/boots/redvelvet.png",
+        img: "./boots/redvelvet.png",
     },
 ],
 },
@@ -50,11 +50,11 @@ const products = [
     price: 4999,
     colors:[{
         code:"pink",
-        img:"/boots/pinka.png",
+        img:"./boots/pinka.png",
     },
     {
         code: "black",
-        img: "/boots/blacka.png",
+        img: "./boots/blacka.png",
     },
 ],
 },
@@ -64,11 +64,11 @@ const products = [
     price: 4999,
     colors:[{
         code:"red",
-        img:"/boots/af1.png",
+        img:"./boots/af1.png",
     },
     {
         code: "brown",
-        img: "/boots/af2.png",
+        img: "./boots/af2.png",
     },
 ],
 },
@@ -83,9 +83,19 @@ menuitems.forEach((item,index) => {
     item.addEventListener("click",() => {
      wrapper.style.transform = `translateX(${-100 * index}vw)`; 
      choosedProduct = products[index]
-     currentProductTitle= choosedProduct.title
+     currentProductTitle.textContent= choosedProduct.title
+     currentProductPrice.textContent= "$" + choosedProduct.price
+     currentProductColors.src=choosedProduct.colors[0].img
+     currentProductColors.forEach((color,index)=>{
+     color.style.backgroundColor = choosedProduct.colors[index].code;
+
+     });
     });
 });
 
- 
+ currentProductColors.forEach((color,index)=>{
+    color.addEventListener("click", ()=>{
+        currentProductImg.src = choosedProduct.colors[index].img
+    })
+ })
    
